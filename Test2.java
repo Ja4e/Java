@@ -67,7 +67,7 @@ public class Test2 {
 				else if (x > 20) {
 //					System.out.printf("Term %d: %s\n", x, d);
 					int counter = d.toString().length();
-					System.out.printf("Term %d: %s\n Counter: %d\n", x, d, counter);
+					System.out.printf("Term %d: %s\n has %d digits\n", x, d, counter);
 					for (long i = 0; i <= x; i++) {
 						total = total.add(fib(i));
 					}  
