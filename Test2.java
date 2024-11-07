@@ -1,3 +1,4 @@
+import java.math.RoundingMode;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Scanner;
@@ -8,7 +9,7 @@ public class Test2 {
 			return BigInteger.valueOf(n);
 		} else {
 			BigInteger a = BigInteger.ZERO, b = BigInteger.ONE, c = BigInteger.ZERO; // Using Big Integer for the formula to have unlimited recursion loops
-			for (long i = 2; i <= n; i++) {
+			for (BigInteger i = BigInteger.valueOf(2); i.compareTo(BigInteger.valueOf(n)) <= 0; i = i.add(BigInteger.ONE)) {
 				c = a.add(b);
 				a = b;
 				b = c;
@@ -17,8 +18,8 @@ public class Test2 {
 		}
 	}
 	
-	public static void main(String[] args) {
-		Runtime.getRuntime().addShutdownHook(new Thread() { // if this script is killed on the spot, output these accordingly 
+	public static void main(String[] args) { 
+		Runtime.getRuntime().addShutdownHook(new Thread() { // Originally from stackoverflow... if this script is killed on the spot, output these accordingly 
 			public void run() {
 				System.out.println("\nProgram terminated.");
 			}
@@ -59,20 +60,20 @@ public class Test2 {
 						}
 					}
 					
-					BigDecimal average = new BigDecimal(total).divide(BigDecimal.valueOf(x), 50, BigDecimal.ROUND_HALF_UP);
+					BigDecimal average = new BigDecimal(total).divide(BigDecimal.valueOf(x), 50, RoundingMode.FLOOR);
 					System.out.println();
 					System.out.println("Average = " + average);
 				} 
 				else if (x > 20) {
-					System.out.printf("Term %d: %s\n", x, d);
+//					System.out.printf("Term %d: %s\n", x, d);
+					int counter = d.toString().length();
+					System.out.printf("Term %d: %s\n Counter: %d\n", x, d, counter);
 					for (long i = 0; i <= x; i++) {
 						total = total.add(fib(i));
-					}
-					int counter = d.toString().length();
-					
-					BigDecimal average = new BigDecimal(total).divide(BigDecimal.valueOf(x), 50, BigDecimal.ROUND_HALF_UP);
+					}  
+					BigDecimal average = new BigDecimal(total).divide(BigDecimal.valueOf(x), 50, RoundingMode.FLOOR);
 					System.out.println("Average = " + average);
-					System.out.printf("%s has %d digits\n", d, counter);
+//					System.out.printf("%s has %d digits\n", d, counter);
 				}
 			} 
 			catch (NumberFormatException e) {
@@ -80,6 +81,9 @@ public class Test2 {
 			} 
 			catch (Exception e) {
 				System.out.println("An error occurred. Error Code: " + e.getMessage());
+			}
+			finally {
+				System.out.println("fun :D");
 			}
 		}
 		scanner.close();
