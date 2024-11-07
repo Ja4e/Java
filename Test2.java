@@ -23,7 +23,7 @@ public class Test2 {
 			public void run() {
 				System.out.println("\nProgram terminated.");
 			}
-		});
+		}); //mmm here
 		
 		System.out.println("Zhu Jinyang");
 		Scanner scanner = new Scanner(System.in);
