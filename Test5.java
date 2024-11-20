@@ -1,9 +1,9 @@
 public class Test5{
 	static long fib(long n) { // updated the formula for better one
-		if (n <= 1) {
-			return n;
-		}
-		else{
+//		if (n <= 1) {
+//			return n;
+//		}
+//		else{
 			long a = 0, b = 1, c = 0;
 			for (long i = 2; i <= n; i++) {
 				c = a + b;
@@ -11,7 +11,7 @@ public class Test5{
 				b = c;
 			}
 			return b;
-		}
+//		}
 	}
 	public static void main(String[] args) {
 		System.out.println("Zhu Jinyang");
