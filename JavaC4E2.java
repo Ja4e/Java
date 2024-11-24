@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class JavaC4E1{
+public class JavaC4E2{
 	public static void main(String[] args){
 		Scanner scanner = new Scanner(System.in);//Couldve used IBIO.inputInt
 		System.out.print("enter first number: ");
