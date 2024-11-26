@@ -73,7 +73,7 @@ public class Test3 {
 					System.out.println("Error – enter a positive number.\n");
 					continue;
 				} else if (x == 0) {
-					break; // Exit the loop if input is 0
+					break; 
 				}
 
 				BigInteger total = BigInteger.ZERO;
