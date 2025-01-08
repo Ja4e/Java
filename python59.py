@@ -1,0 +1,2 @@
+print("uwu")
+print('uwu')
