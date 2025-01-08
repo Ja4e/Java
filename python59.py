@@ -1,2 +1,1 @@
-print("uwu")
-print('uwu')
+
