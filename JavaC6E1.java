@@ -4,13 +4,9 @@ public class JavaC6E1 {
 	static String stars(int n){
 		String xx = "";
 		for (int i = 0; i < n; i++){
-			if (i % 10 == 0){
-				xx = xx + "\n*";
-			}
-			else{
 				xx = xx + "*";
-			}
 		}
+		xx = xx + "\n";
 		return xx;
 	}
 	public static void main (String[] args) {
