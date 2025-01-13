@@ -7,11 +7,11 @@ public class JavaC9E3 {
 			}
 		for (int d = 1; d <= 6; d++){
 			for (int i = 0; i < 100; i++){
-				if (num[d]==i){
-					System.out.println(num[i]);
+				if (num[i]==d){
+					System.out.print(d);
 				}
 			}
-			System.out.println();
+			System.out.print("\n");
 		}
 	}
 }
