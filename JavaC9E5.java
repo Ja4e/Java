@@ -1,6 +1,7 @@
 public class JavaC9E5 {
 	public static void main(String args[]){
-		int[] num = new int[1000];
+		int x = 1000;
+		int[] num = new int[x];
 		
 		for (int i = 0; i < 100; i++){
 			double xx = Math.random() * 6;
@@ -11,7 +12,7 @@ public class JavaC9E5 {
 		for (int d = 2; d <= 12; d++){
 			System.out.print(d);
 			System.out.print("   ");
-			for (int i = 0; i < 1000; i++){
+			for (int i = 0; i < x; i++){
 				if (num[i]==d){
 					System.out.print("X");
 				}
