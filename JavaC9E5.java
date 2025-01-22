@@ -1,4 +1,6 @@
 public class JavaC9E5 {
+	public static double
+	
 	public static void main(String args[]){
 		int x = 1000;
 		int[] num = new int[x];
