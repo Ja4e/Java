@@ -24,7 +24,7 @@ public class JavaC6E4 {
 						String bb = stars(count);
 						System.out.print(bb+"\n");
 					}
-					for (int i =0; i <= num; i++){
+					for (int i = 0; i <= num; i++){
 						count = i + 1;
 						String aa = stars(count);
 						System.out.print(aa+"\n");
