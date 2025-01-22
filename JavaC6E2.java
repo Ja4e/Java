@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner;//
 
 public class JavaC6E2 {
 	static String stars(int n){
@@ -10,9 +10,9 @@ public class JavaC6E2 {
 	}
 	public static void main (String[] args) {
 		do{
-			Scanner scanner = new Scanner(System.in);
-			System.out.print("enter number of lines: ");
-			int num = scanner.nextInt();
+			Scanner scanner = new Scanner(System.in);//
+			System.out.print("enter number of lines: "); //couldve used:  int num = IBIO.input("enter number of lines: ");
+			int num = scanner.nextInt();//
 			int count = num;
 			for (int i =0; i < num; i++){
 				count = i + 1;
