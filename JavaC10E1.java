@@ -19,11 +19,12 @@
 }
 */
 
+//import java.util.Scanner;
 public class JavaC10E1 {
 	public static void main(String args[]){
-		//Scanner scanner = new Scanner(System.in);
+		//Scanner scan = new Scanner(System.in);
 		//System.out.print("enter your name: ");
-		//String ss = scanner.next();
+		//String ss = scan.next();
 		String ss = IBIO.input("enter your name: "); // This IBIO could be replaced by these four lines manually without IBIO support
 		char[] xx = ss.toCharArray();
 		System.out.println(ss);
@@ -37,5 +38,6 @@ public class JavaC10E1 {
 		for (int d = xx.length-2; d >= 0; d--){
 			System.out.print(xx[d]);
 		}
+		for (int d = 0 )
 	}
 }
