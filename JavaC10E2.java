@@ -18,7 +18,7 @@ public class JavaC10E2 {
         int e = 1;
         int a = 0;
 
-        if (check(num, xx) == 0) {  // Valid binary input
+        if (check(num, xx) == 0) { 
             for (int d = 0; d < num.length(); d++) {
                 if (xx[d] == '1') { 
                     a = a + e;
