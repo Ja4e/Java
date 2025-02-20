@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f3077f33-1abf-4d5e-9e41-d267936e0744" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaC10E1.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaC10E1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaStringDemoThur.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaStringDemoThur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaStringDemoThur.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaStringDemoThur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaStringDemoThur.py" beforeDir="false" afterPath="$PROJECT_DIR$/JavaStringDemoThur.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaC10E2.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaC10E2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaC10E2.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaC10E2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +36,7 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/jake/Java",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>

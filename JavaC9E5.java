@@ -1,8 +1,8 @@
 public class JavaC9E5 {
-	public static double
+	public final static int x = 1000;
 	
 	public static void main(String args[]){
-		int x = 1000;
+		//int x = 1000;
 		int[] num = new int[x];
 		
 		for (int i = 0; i < 100; i++){

@@ -22,7 +22,7 @@ public class Stack{
 		}
 	}
 	
-	public void main(String[] args){
+	public static void main(String[] args){
 		Node temp = top;
 		while( temp != null ){
 			System.out.println( temp.data );

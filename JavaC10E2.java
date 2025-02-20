@@ -1,33 +1,34 @@
 import java.util.Scanner;
 
 public class JavaC10E2 {
-    static int check(String num, char[] xx) {
-        for (int d = 0; d < num.length(); d++) {
-            if (xx[d] != '0' && xx[d] != '1') {
-                return 1; 
+    static boolean isBinary(char[] num) {
+        for (int i = 0; i < num.length; i++) {
+            if (num[i] != '0' && num[i] != '1') {
+                return false; 
             }
         }
-        return 0;
+        return true;
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter Binary: ");
         String num = scanner.next();
-        char[] xx = num.toCharArray();
-        int e = 1;
-        int a = 0;
+        scanner.close(); 
+		char[] a = num.toCharArray(); 
+        if (isBinary(a)) { 
+            long b = 0;
+            long c = 1;
 
-        if (check(num, xx) == 0) { 
-            for (int d = 0; d < num.length(); d++) {
-                if (xx[d] == '1') { 
-                    a = a + e;
+            for (int d = a.length - 1; d >= 0; d--) {
+                if (a[d] == '1') { 
+                    b += c;
                 }
-                e = e * 2; 
+                c *= 2;
             }
-            System.out.println(a);
+            System.out.println("Decimal: " + b);
         } else {
-            System.out.println("not a binary");
+            System.out.println("Not a binary number.");
         }
     }
 }
